@@ -12,7 +12,6 @@ Tasks
 
 ## Steps to run
 
-1. `bun install`
-2. `cd server && bun install`
-3. `cd client && bun install`
-4. In the root direcory run `bun start`, this will run both the client and the server.
+0. If you do not have `bun` installed, please install it. You can either use `curl -fsSL https://bun.sh/install | bash` or follow the instructions on their [website](https://bun.sh/docs/installation).
+1. In the root directory, run `bun run install-me`. This will install the dependencies for the entire project.
+2. In the root directory, run `bun start`. This will start both the client and the server.
