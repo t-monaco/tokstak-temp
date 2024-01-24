@@ -1,0 +1,11 @@
+{
+  "name": "tokstak",
+  "scripts": {
+    "install-me": "bun install && concurrently \"cd ./server && bun install\" \"cd ./client && bun install\"",
+    "start": "concurrently --kill-others \"cd ./server && bun run index.ts\" \"cd ./client && bun run build && bun run preview\"",
+    "dev": "concurrently --kill-others \"cd ./server && bun --watch index.ts\" \"cd ./client && bun run dev\""
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
